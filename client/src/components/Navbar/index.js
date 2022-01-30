@@ -5,6 +5,9 @@ import styled from 'styled-components'
 const StyledNav = styled.nav`
     display: flex;
     justify-content: space-between;
+    padding: 20px;
+    border-bottom: solid 1px #4a5568;
+    line-height: 2px;
     
 `
 const LeftSide = styled.div`
