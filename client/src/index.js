@@ -12,6 +12,7 @@ import {
 import { ChakraProvider } from '@chakra-ui/react'
 import SignIn from './pages/Auth/SignIn';
 import SignUp from './pages/Auth/SignUp';
+import Products from './pages/Products';
 
 ReactDOM.render(
   <ChakraProvider>
@@ -19,6 +20,7 @@ ReactDOM.render(
       <Routes>
         <Route path="/" element={<App />}>
           <Route index element={<Home />} />
+          <Route path="products" element={<Products />} />
           <Route path="signin" element={<SignIn />} />
           <Route path="signup" element={<SignUp />} />
         </Route>
