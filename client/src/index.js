@@ -9,15 +9,22 @@ import {
   Routes,
   Route
 } from "react-router-dom";
+import { ChakraProvider } from '@chakra-ui/react'
+import SignIn from './pages/Auth/SignIn';
+import SignUp from './pages/Auth/SignUp';
 
 ReactDOM.render(
-  <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<App />}>
-        <Route index element={<Home />} />
-      </Route>
-    </Routes>
-  </BrowserRouter>,
+  <ChakraProvider>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App />}>
+          <Route index element={<Home />} />
+          <Route path="signin" element={<SignIn />} />
+          <Route path="signup" element={<SignUp />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  </ChakraProvider>,
   document.getElementById('root')
 );
 
