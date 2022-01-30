@@ -1,9 +1,20 @@
+import { Grid } from '@chakra-ui/react';
 import React from 'react';
+import Card from '../../components/Card'
 
 function Products() {
     return (
         <div>
-            Products
+            <Grid templateColumns='repeat(5, 1fr)' gap={2}>
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+            </Grid>
         </div>
     );
 }
